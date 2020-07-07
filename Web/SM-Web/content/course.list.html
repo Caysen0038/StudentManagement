@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/vue.aidework.table.js"></script>
+		<script src="/js/aidework.dialog.js"></script>
+		<script src="/js/aidework.core.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<link rel="stylesheet" href="/css/aidework.table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/course.list.css" />
+	</head>
+	<body>
+		<div class="table-container" id="data-table">
+			<div class="header">
+				<ul class="header-button-list">
+					<li class="insert-data button-marked">新增</li>
+					<li class="delete-data button">删除</li>
+				</ul>
+				<div class="search-container" style="float: right;">
+					<input type="text" v-model="keyword" placeholder="名称"/>
+					<div v-on:click="search">搜索</div>
+				</div>
+			</div>
+			<table class="data-table">
+				<tr class="header">
+					<td width="80">ID</td>
+					<td width="80">课程ID</td>
+					<td>名称</td>
+					<td>学分</td>
+					<td>类型</td>
+					<td width="250">操作</td>
+				</tr>
+				<tr class="record" v-for="r in records" v-on:click="select" v-on:dblclick="edit">
+					<td :title="r.id" column="id" refresh="manual" editable='false'>{{r.id}}</td>
+					<td :title="r.coid" column="coid" refresh="manual" editable='false'>{{r.coid}}</td>
+					<td :title="r.name" column="name" refresh="manual">{{r.name}}</td>
+					<td :title="r.credit" column="credit" refresh="manual">{{r.credit}}</td>
+					<td :title="r.type" column="type" refresh="manual">{{r.type==0?'必修':r.type==1?'选修':r.type==2?'网络':'其他'}}</td>
+					<td editable='false' width="250">
+						<drop @click="drop">删除</drop>
+					</td>
+				</tr>
+			</table>
+			<div class="bottom">
+				<select class="page-selector value-selector" v-on:change="perChanged">
+					<option value="1">每页1条</option>
+					<option value="2">每页2条</option>
+					<option value="5" selected="selected">每页5条</option>
+					<option value="10">每页10条</option>
+					<option value="15">每页15条</option>
+					<option value="20">每页20条</option>
+					<option value="30">每页30条</option>
+				</select>
+				<div class="page-container">
+					<div class="page-button pre-page" v-on:click="pre">&lt;</div>
+					<div type="text" class="current-page">{{page.current}}</div>
+					<div class="page-button next-page" v-on:click="next">&gt;</div>
+					<div class="totle-page">共{{page.total}}页</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="app-edit" class="edit-container edit" v-if="edit">
+			<span class="title">添加课程</span>
+			<hr class="split"/>
+			<table class="insert-table">
+				<tr>
+					<td class="name">名称:</td>
+					<td class="value">
+						<input type="text" class='input-text inst-name' v-model="course.name"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">学分:</td>
+					<td class="value">
+						<input type="text" class='input-text inst-name' v-model="course.credit"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">类型:</td>
+					<td class="value">
+						<select class="value-selector grade" v-model="course.type">
+							<option value="0">必修</option>
+							<option value="1">选修</option>
+							<option value="2">网课</option>
+							<option value="3">其他</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<div class="button-list">
+				<div class="button close-button" @click="close">关闭</div>
+				<div class="button insert-button" @click="save">添加</div>
+			</div>
+		</div>
+		
+		<script src="/js/content/course.list.js"></script>
+	</body>
+</html>

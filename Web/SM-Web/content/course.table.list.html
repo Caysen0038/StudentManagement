@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/vue.aidework.table.js"></script>
+		<script src="/js/aidework.dialog.js"></script>
+		<script src="/js/aidework.core.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<link rel="stylesheet" href="/css/aidework.table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/course.table.list.css" />
+	</head>
+	<body>
+		<ul class="header-selector-list edit" id="header-control">
+			<li>
+				<span>学期</span>
+				<select class="value-selector" v-model="term">
+					<option value="2020.2">2020年秋季</option>
+					<option value="2020.1">2020年春季</option>
+					<option value="2019.2">2019年秋季</option>
+					<option value="2019.1">2019年春季</option>
+					<option value="2018.2">2018年秋季</option>
+					<option value="2018.1">2018年春季</option>
+					<option value="2017.2">2017年秋季</option>
+					<option value="2017.1">2017年春季</option>
+				</select>
+			</li>
+			<li>
+				<span>查询对象</span>
+				<select class="value-selector" v-model="type">
+					<option value="0">学生</option>
+					<option value="1">教师</option>
+					<option value="2">班级</option>
+				</select>
+			</li>
+			<li>
+				<span>院系</span>
+				<select class="value-selector" v-model="iid">
+					<option v-for="inst in insts" :value="inst.iid">{{inst.name}}</option>
+				</select>
+			</li>
+			<template v-if="type==0">
+				<li>
+					<span>班级</span>
+					<select class="value-selector" v-model="cid">
+						<option v-for="clazz in clazzs" :value="clazz.cid">{{clazz.name}}</option>
+					</select>
+				</li>
+				<li>
+					<span>学生</span>
+					<select class="value-selector" v-model="sid">
+						<option v-for="student in students" :value="student.sid">{{student.name}}</option>
+					</select>
+				</li>
+			</template>
+			<template v-if="type==1">
+				<li>
+					<span>教师</span>
+					<select class="value-selector" v-model="tid">
+						<option v-for="teacher in teachers" :value="teacher.tid">{{teacher.name}}</option>
+					</select>
+				</li>
+			</template>
+			<template v-if="type==2">
+				<li>
+					<span>班级</span>
+					<select class="value-selector" v-model="cid">
+						<option v-for="clazz in clazzs" :value="clazz.cid">{{clazz.name}}</option>
+					</select>
+				</li>
+			</template>
+		</ul>
+		<div class="table-container" id="data-table">
+			<div class="header">
+
+			</div>
+			<table class="data-table">
+				<tr class="header">
+					<td width="80">ID</td>
+					<td width="80">课程ID</td>
+					<td>名称</td>
+					<td>授课教师</td>
+					<td width="100">学期</td>
+					<td width="80">周次</td>
+					<td width="100">节次</td>
+					<td width="150">操作</td>
+				</tr>
+				<tr class="record" v-for="r in records" v-on:click="select" v-on:dblclick="edit">
+					<td :title="r.id" column="id" refresh="manual" editable='false'>{{r.id}}</td>
+					<td :title="r.coid" column="coid" refresh="manual" editable='false'>{{r.coid}}</td>
+					<td :title="r.course" column="course" refresh="manual" editable="false">{{r.course}}</td>
+					<td :title="r.tid" column="tid" refresh="manual">{{r.tid}}</td>
+					<td :title="r.term" column="term" refresh="manual">{{r.term}}</td>
+					<td :title="r.week" column="week" refresh="manual">{{r.week}}</td>
+					<td :title="r.section" column="section" refresh="manual">{{r.section}}</td>
+					<td editable='false' width="250">
+						<drop @click="drop">删除</drop>
+					</td>
+				</tr>
+			</table>
+			<div class="bottom">
+				<select class="page-selector value-selector" v-on:change="perChanged">
+					<option value="1">每页1条</option>
+					<option value="2">每页2条</option>
+					<option value="5">每页5条</option>
+					<option value="10">每页10条</option>
+					<option value="15">每页15条</option>
+					<option value="20">每页20条</option>
+					<option value="30">每页30条</option>
+					<option value="1000" selected="selected">每页1000条</option>
+				</select>
+				<div class="page-container">
+					<div class="page-button pre-page" v-on:click="pre">&lt;</div>
+					<div type="text" class="current-page">{{page.current}}</div>
+					<div class="page-button next-page" v-on:click="next">&gt;</div>
+					<div class="totle-page">共{{page.total}}页</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<script src="/js/content/course.table.list.js"></script>
+	</body>
+</html>

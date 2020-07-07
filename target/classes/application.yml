@@ -1,0 +1,35 @@
+server:
+  port: 2345
+      
+spring:
+  application:
+    name: student_management
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/sm?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,env,health,shutdown
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true

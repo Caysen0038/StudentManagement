@@ -1,0 +1,98 @@
+.edit{
+	
+}
+.edit .input-text{
+	height: 28px;
+	width: 200px;
+	font-size: 16px;
+	color: #535353;
+	border: 1px solid #D5D5D5;
+}
+.edit .value-selector{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	padding-left: 15px;
+	min-width: 100px;
+	height:25px;
+	border-color:#cccccc;
+	color:#555555;
+	margin: 0 0;
+	margin-top: 7px;
+	border-radius: 3px 3px;
+	background: url(http://imagecnd.baokaicong.com/icon/selector_20200416.png) no-repeat right;
+	background-size: 15px 15px;
+}
+.edit .insert-table{
+	margin: 0 auto;
+	margin-top: 20px;
+	border-spacing: 0;
+}
+.edit .insert-table .name{
+	width: 200px;
+	height: 40px;
+	padding-right: 10px;
+	text-align: right;
+	color: #FFFFFF;
+}
+.edit .insert-table .value{
+	width: 350px;
+	text-align: left;
+	padding-left: 10px;
+
+}
+.edit .inst-name{
+	background: #eeeeee;
+}
+.edit .title{
+	color:#FFFFFF ;
+}
+.edit .split{
+	margin: 20px 0;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #FFFFFF;
+	
+}
+.edit .button-list{
+	margin: 10px auto;
+	width: 240px;
+	margin-top: 20px;
+}
+.edit .button{
+	width: 100px;
+	height: 30px;
+	margin: 0 5px;
+	float: left;
+	background: #0070CC;
+	cursor: pointer;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px 5px;
+}
+.edit .insert-button{
+	background: #6AAAF3;
+}
+.edit .insert-button:hover{
+	background: #5483FF;
+}
+.edit .close-button{
+	background: #FA3232;
+}
+.edit .close-button:hover{
+	background: #F77070;
+}
+.edit .inst{
+	color: #ffffff;
+}
+.edit .inst option{
+	color: #000000;
+}
+.edit .grade{
+	color: #ffffff;
+}
+.edit .grade option{
+	color: #000000;
+}

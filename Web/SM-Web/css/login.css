@@ -1,0 +1,117 @@
+/* 滚动条样式 */
+body::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.2);
+	
+}
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	border-radius: 0;
+	background: rgba(0,0,0,0.1);
+}
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+.login-container{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	background:radial-gradient(#1263CC,#06244A);
+	/*实现垂直居中*/
+	align-items: center;
+	/*实现水平居中*/
+	justify-content: center;
+}
+.login-container .login{
+	background: #F7F7F7;
+	width: 400px;
+	height: 250px;
+	margin: 0 auto;
+	box-shadow: 10px 10px 20px 10px #272727;
+}
+.login-container .header{
+	width: 250px;
+	height: 40px;
+	margin: 0 auto;
+	background: #272727;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 5px;
+	border-radius: 0 0 6px 6px;
+}
+.login-container #login-form{
+	width: 250px;
+	margin-top: 30px;
+	margin: 0 auto;
+	position: relative;
+}
+.login-container .text-line{
+	position: relative;
+	width: 250px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+.text-line div{
+	float: left;
+	font-size: 16px;
+	color: #666666;
+	width: 70px;
+}
+.login-container .text-line input{
+	float: left;
+	width: 170px;
+	height: 23px;
+}
+.login-container .operate{
+	width: 100%;
+	height: 80px;
+	
+}
+.login-container .load-gif{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	margin-top: -20px;
+	display: none;
+}
+.login-container .load-gif img{
+	width: 70px;
+	height: 70px;
+}
+.login-container #login-button{
+	width: 250px;
+	height: 30px;
+	margin: 0 auto;
+	background: #363636;
+	border-color: #272727;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	user-select: none;
+	
+}
+.login-container #login-button:hover{
+	background: #4E4E4E;
+}
+.login-container .result{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	color: red;
+	font-size: 12p;
+}

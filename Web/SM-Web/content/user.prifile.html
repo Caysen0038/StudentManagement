@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<link rel="stylesheet" href="/css/content/user.prifile.css" />
+	</head>
+	<body>
+		<div id="app">
+			<template v-if="user!=null">
+				<table class="prifile-table">
+					<tr height="40">
+						<td rowspan="3" class="photo">
+							<img src="/img/default_user.png" />
+						</td>
+						<td class="name">用户ID:</td>
+						<td class="value">{{user.uid}}</td>
+						<td class="name">用户名:</td>
+						<td class="value">{{user.username}}</td>
+					</tr>
+					<tr height="40">
+						<td class="name">角色:</td>
+						<td class="value">{{user.role}}</td>
+						<td class="name">关联账户:</td>
+						<td class="value">{{user.aid}}</td>
+					</tr>
+<!-- 					<tr height="40">
+						<td class="name">学院:</td>
+						<td class="value">{{user.iid}}</td>
+						<td class="name"></td>
+						<td class="value"></td>
+					</tr> -->
+				</table>
+			</template>
+			
+			<template v-if="user==null">
+				<div class="cue">
+					暂无信息
+				</div>
+			</template>
+		</div>
+		<script src="/js/content/user.prifile.js"></script>
+	</body>
+</html>

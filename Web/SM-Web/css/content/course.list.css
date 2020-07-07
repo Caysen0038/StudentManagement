@@ -1,0 +1,19 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+.edit{
+	padding:  10px 10px;
+}
+.edit .inst{
+	color: #ffffff;
+}
+.edit .inst option{
+	color: #000000;
+}
+.edit .grade{
+	color: #ffffff;
+}
+.edit .grade option{
+	color: #000000;
+}

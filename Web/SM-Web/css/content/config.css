@@ -1,0 +1,76 @@
+.config-container{
+	width: 900px;
+	margin: 0 auto;
+}
+.config-container .item{
+	width: 100%;
+	height: 40px;
+	margin: 5px 0;
+}
+.config-container .item-name{
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 10px;
+	width: 190px;
+	float: left;
+}
+.config-container .item-value{
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	padding-right: 50px;
+	float: left;
+	padding-left: 20px;
+}
+.config{
+	
+}
+.config .switcher{
+	height: 30px;
+	width: 70px;
+	border-radius: 15px 15px;
+	background: gray;
+	margin: 5px 0;
+	position: relative;
+	cursor: pointer;
+	line-height: 30px;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	box-shadow: 2px 2px 5px #808080;
+}
+.config .switcher .switcher-button{
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background: #ffffff;
+	cursor: pointer;
+	font-weight: bold;
+	float: left;
+	box-shadow: 2px 2px 5px #808080;
+}
+.config .switcher .switcher-button-open{
+	float: right;
+}
+.config .switcher .switcher-button-close{
+	float: left;
+}
+.config .switcher .open{
+	float: left;
+	color: #FFFFFF;
+	margin-left: 7px;
+	position: absolute;
+	left: 0;
+}
+.config .switcher .close{
+	float: right;
+	color: #FFFFFF;
+	margin-right: 7px;
+	position: absolute;
+	right: 0;
+}
+.config .term-selector{
+	width: 200px;
+}

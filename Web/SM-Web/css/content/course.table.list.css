@@ -1,0 +1,32 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+.header-selector-list{
+	height: 30px;
+	max-width: 90%;
+	margin: 5px auto;
+	position: relative;
+	padding: 5px;
+}
+.header-selector-list li{
+	list-style: none;
+	float: left;
+	color: #747474;
+	margin-right: 20px;
+}
+.edit{
+	padding:  10px 10px;
+}
+.edit .inst{
+	color: #ffffff;
+}
+.edit .inst option{
+	color: #000000;
+}
+.edit .grade{
+	color: #ffffff;
+}
+.edit .grade option{
+	color: #000000;
+}

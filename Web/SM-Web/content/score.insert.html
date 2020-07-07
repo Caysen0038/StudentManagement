@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<script src="/js/jquery.course-table.js"></script>
+		<link rel="stylesheet" href="/css/course-table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/score.insert.css" />
+		
+		<title></title>
+	</head>
+	<body>
+		<div id="app" class="edit">
+			<div class="teacher-select-container">
+				<div class="selector-container">
+					<span>学期：</span>
+					<select class="value-selector" v-model="term">
+						<option value="2020.2">2020秋季</option>
+						<option value="2020.1">2020春季</option>
+						<option value="2019.2">2019秋季</option>
+						<option value="2019.1">2019春季</option>
+					</select>
+				</div>
+				
+				<div class="selector-container">
+					<span>课程</span>
+					<select class="value-selector course-selector" v-model="courseId">
+						<option v-for="(course,i) in courses" :value="i">{{course.clazz+" - "+course.course}}</option>
+					</select>
+				</div>
+				<div class="header-button-list">
+					<div class="header-button" @click="submit">提交成绩</div>
+					<div class="header-button" @click="save">保存成绩</div>
+				</div>
+			</div>
+			<table class="score-table">
+				<tr class="header">
+					<td width="50">序号</td>
+					<td width="100">学生</td>
+					<td width="130">课程</td>
+					<td width="120">班级</td>
+					<td width="120">成绩</td>
+					<td width="80">状态</td>
+					<td>操作</td>
+				</tr>
+				<tr class="record" v-for="(score,i) in scores">
+					<td>{{i+1}}</td>
+					<td>{{score.student}}</td>
+					<td>{{score.course}}</td>
+					<td>{{score.clazz}}</td>
+					<td v-if="score.status<2">
+						<input class="score-input" type="number" v-model="score.score"/>
+					</td>
+					<td v-if="score.status>=2">
+						{{score.score}}
+					</td>
+					<td>{{score.status==0?"无成绩":score.status==1?"已保存":score.status==2?"已公布":score.status==3?"申请打回":"其他"}}</td>
+					<td>
+						<div class="operate-button" v-if="score.status==2" :index="i" @click="rollback">申请打回</div>
+						<div class="operate-button" v-if="score.status==3" :index="i" @click="rollbackCanceled">撤销申请</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		
+		<script src="/js/content/score.insert.js"></script>
+	</body>
+</html>

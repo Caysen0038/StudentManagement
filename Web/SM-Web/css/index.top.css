@@ -1,0 +1,60 @@
+.top-container{
+	margin: 0 0;
+	width: 100%;
+	height: 100px;
+	background:linear-gradient(to right,#ffffff,#ffffff,#ffffff,#A6CFFF,#2E8FFF);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+
+}
+.top-container .logo{
+	height: 60px;
+	float: left;
+}
+.top-container .title{
+	font-size: 30px;
+	color: #2E8FFF;
+	font-weight: bold;
+	font-style: italic;
+}
+.user-container{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 30px;
+}
+.user-container .none-user{
+	
+}
+.user-container .login{
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.user-container .login:horizontal{
+	text-decoration: underline;
+}
+.user-container .with-user{
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.user-container .user-role{
+	
+}
+.user-container .username{
+	margin: 0 10px;
+}
+.user-container .logout{
+	text-decoration: underline;
+}
+.user-container .logout:hover{
+	color: #E80B0B;
+	
+}

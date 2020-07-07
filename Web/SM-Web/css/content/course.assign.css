@@ -1,0 +1,49 @@
+.teacher-select-container{
+	width: 950px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	min-height: 40px;
+	line-height: 40px;
+}
+.teacher-select-container .selector-container{
+	float: left;
+	margin-right: 20px;
+	color: #646464;
+}
+
+.control-container{
+	
+}
+.control-container .control-button{
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	background: #0070CC;
+	text-align: center;
+	margin: 0 10px;
+	margin-top: 5px;
+	font-size: 14px;
+	color: #ffffff;
+	cursor: pointer;
+	float: right;
+}
+.control-container .control-button:hover{
+	background: #399FF3;
+}
+.course-edit-container{
+	margin-bottom: 30px;
+}
+.edit-container .value span{
+	color: #ffffff;
+}
+.edit-container .value-selector{
+	color: #ffffff;
+	width: 200px;
+}
+.edit-container .value-selector option{
+	color: #000000;
+}
+.edit-container .course-selector{
+	width: 200px;
+}

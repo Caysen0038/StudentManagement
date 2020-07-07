@@ -1,0 +1,247 @@
+.table-container{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	max-width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* Header样式 */
+.table-container .header{
+	width: 100%;
+	margin: 5px;
+	position: relative;
+	padding: 5px;
+}
+
+.table-container .button{
+	width: 80px;
+	height: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #D3D3D3;
+	background: #FAFAFA;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px;
+}
+.table-container .button:hover{
+	border-color: #0DB9C2;
+	color: #0DB9C2;
+}
+.table-container .button-marked{
+	width: 80px;
+	height: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #075EA4;
+	background: #0070CC;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 5px;
+	color: #ffffff;
+}
+.table-container .button-marked:hover{
+	border: 1px solid #0F77CD;
+	background: #1081DD;
+}
+.table-container .search-container{
+	width: 300px;
+	height: 30px;
+	position: relative;
+	margin: 5px;
+}
+.table-container .search-container input{
+	width: 237px;
+	position: absolute;
+	padding-left: 5px;
+	padding-right: 5px;
+	top: 0;
+	left: 0;
+	height: 24px;
+	color: #727272;
+}
+.table-container .search-container div{
+	width: 50px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	cursor: pointer;
+	background: #066FC5;
+	color: #ffffff;
+}
+
+
+/* Table表样式 */
+.table-container .data-table{
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0;
+}
+.table-container .data-table .header{
+	text-align: left;
+	height: 40px;
+	background: #F7F7F7;
+	font-size: 14px;
+	user-select: none;
+	-ms-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+.table-container .data-table .header td{
+	padding-left: 10px;
+	font-weight: bold;
+	border-top: 1px solid #D3D3D3;
+	border-bottom: 1px solid #D3D3D3;
+}
+.table-container .data-table .record{
+	font-size: 14px;
+	height: 40px;
+	cursor: pointer;
+	color: #464646;
+}
+.table-container .data-table .record:hover{
+	background: #D8EDFD;
+}
+.table-container .data-table .record-select{
+	background: #D8EDFD;
+}
+.table-container .data-table .record td{
+	border-bottom: 1px solid #E5E5E5;
+	padding-left: 10px;
+	word-break:keep-all;/* 不换行 */
+	white-space:nowrap;/* 不换行 */
+	overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+.table-container .data-table operate{
+	font-size: 12px;
+	padding: 1px 5px;
+	background: #4398F2;
+	border: 1px solid #2378D2;
+	color: #ffffff;
+	font-size: 12px;
+}
+.table-container .data-table operate:hover{
+	text-decoration: underline;
+}
+.table-container .data-table drop{
+	padding: 1px 5px;
+	font-size: 12px;
+	background: #FD6262;
+	border: 1px solid #F43636;
+	color: #ffffff;
+}
+
+.table-container .value-selector{
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	padding-left: 15px;
+	min-width: 100px;
+	height:25px;
+	border-color:#cccccc;
+	color:#555555;
+	margin-top: 7px;
+	border-radius: 3px 3px;
+	background: url(http://imagecnd.baokaicong.com/icon/selector_20200416.png) no-repeat right;
+	background-size: 15px 15px;
+}
+
+.table-container .bottom{
+	width: 100%;
+	margin: 5px;
+	padding: 5px;
+	min-height: 50px;
+}
+
+
+/* Page样式 */
+.table-container .page-container{
+	width: 190px;
+	height: 40px;
+	font-size: 12px;
+	text-align: center;
+	margin: 0 auto;
+}
+.table-container .page-container .page-button{
+	user-select: none;
+	-ms-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	border: 1px solid #D3D3D3;
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 23px;
+	cursor: pointer;
+	margin: 5px;
+	font-size: 18px;
+	color: #747474;
+}
+.table-container .page-container .page-button:hover{
+	border-color: #0DB9C2;
+	color: #0DB9C2;
+}
+.table-container .page-container .pre-page{
+	
+	
+}
+.table-container .page-container .next-page{
+	
+}
+.table-container .page-container .page-input{
+	border: 1px solid #D3D3D3;
+	float: left;
+	width: 25px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	margin: 5px;
+}
+.table-container .page-container .current-page{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 23px;
+	margin: 5px;
+	background: #127FD9;
+	border: 1px solid #127FD9;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.table-container .page-container .totle-page{
+	width: 60px;
+	height: 25px;
+	float: left;
+	font-size: 14px;
+	line-height: 25px;
+	margin: 6px;
+	margin-left: -10px;
+}
+
+
+/* 编辑组件样式 */
+
+.table-container .input-text{
+	width: 90%;
+	height: 30px;
+	border: none;
+	border:1px solid #9A9A9A;
+	font-size: 14px;
+}

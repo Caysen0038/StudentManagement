@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/vue.aidework.table.js"></script>
+		<script src="/js/aidework.dialog.js"></script>
+		<script src="/js/aidework.core.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<script src="/js/jquery.course-table.js"></script>
+		<link rel="stylesheet" href="/css/aidework.table.css" />
+		<link rel="stylesheet" href="/css/course-table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/course.table.css" />
+	</head>
+	<body>
+		<div id="app">
+			<ul class="header-selector-list edit" id="header-control">
+				<li>
+					<span>学期</span>
+					<select class="value-selector" v-model="term">
+						<option value="2020.2">2020年秋季</option>
+						<option value="2020.1">2020年春季</option>
+						<option value="2019.2">2019年秋季</option>
+						<option value="2019.1">2019年春季</option>
+						<option value="2018.2">2018年秋季</option>
+						<option value="2018.1">2018年春季</option>
+						<option value="2017.2">2017年秋季</option>
+						<option value="2017.1">2017年春季</option>
+					</select>
+				</li>
+				<li>
+					<span>显示方式</span>
+					<select class="value-selector" v-model="type">
+						<option value="0">课表</option>
+						<option value="1">列表</option>
+					</select>
+				</li>
+			</ul>
+			<div class="table-container course-list">
+				<div class="header"></div>
+				<table class="data-table">
+					<tr class="header">
+						<td width="80">ID</td>
+						<td width="80">课程ID</td>
+						<td>名称</td>
+						<td>授课教师</td>
+						<td width="100">学期</td>
+						<td width="80">周次</td>
+						<td width="100">节次</td>
+					</tr>
+					<tr class="record" v-for="r in courses">
+						<td :title="r.id" column="id" refresh="manual" editable='false'>{{r.id}}</td>
+						<td :title="r.coid" column="coid" refresh="manual" editable='false'>{{r.coid}}</td>
+						<td :title="r.name" column="name" refresh="manual">{{r.name}}</td>
+						<td :title="r.tid" column="tid" refresh="manual">{{r.tid}}</td>
+						<td :title="r.term" column="term" refresh="manual">{{r.term}}</td>
+						<td :title="r.week" column="week" refresh="manual">{{r.week}}</td>
+						<td :title="r.section" column="section" refresh="manual">{{r.section}}</td>
+					</tr>
+				</table>
+				<div class="bottom">
+					<select class="page-selector value-selector">
+						<option value="1">每页1条</option>
+						<option value="2">每页2条</option>
+						<option value="5">每页5条</option>
+						<option value="10">每页10条</option>
+						<option value="15">每页15条</option>
+						<option value="20">每页20条</option>
+						<option value="30">每页30条</option>
+						<option value="1000" selected="selected">每页1000条</option>
+					</select>
+					<div class="page-container">
+						<div class="page-button pre-page">&lt;</div>
+						<div type="text" class="current-page">1</div>
+						<div class="page-button next-page">&gt;</div>
+						<div class="totle-page">共1页</div>
+					</div>
+				</div>
+			</div>
+			<table class="course-table course-edit-container">
+				<tr>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+					<th>星期四</th>
+					<th>星期五</th>
+					<th>星期六</th>
+					<th>星期日</th>
+				</tr>
+				<tr class="course-row">
+					<td class="course"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr><td class="tr-split" colspan="7">中午</td></tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<td class="tr-split" colspan="7">下午</td>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		
+		<script src="/js/content/course.table.js"></script>
+	</body>
+</html>

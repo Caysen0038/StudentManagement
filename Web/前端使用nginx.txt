@@ -1,0 +1,22 @@
+server {
+        listen       4001;
+        server_name  localhost;
+
+       location =/ {
+            root   D:\Workspace\Web-Project\SM;
+            index  index.html;
+        }
+      location =/login {
+            rewrite /login /login.html break;
+	proxy_pass http://127.0.0.1:8001/login.html;
+       }	
+       location ^~ /gateway/ {
+            proxy_pass	http://127.0.0.1:2345/;
+        }
+       location / {
+            root   D:\Workspace\Web-Project\SM;
+            index  index.html;
+        }
+	
+
+    }

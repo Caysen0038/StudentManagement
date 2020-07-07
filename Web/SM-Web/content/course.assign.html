@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<script src="/js/jquery.course-table.js"></script>
+		<link rel="stylesheet" href="/css/course-table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/course.assign.css" />
+		
+		<title></title>
+	</head>
+	<body>
+		<div id="app" class="edit">
+			<div class="teacher-select-container">
+				<div class="selector-container">
+					<span>学期：</span>
+					<select class="value-selector" v-model="term">
+						<option value="2020.2">2020秋季</option>
+						<option value="2020.1">2020春季</option>
+						<option value="2019.2">2019秋季</option>
+						<option value="2019.1">2019春季</option>
+					</select>
+				</div>
+				
+				<div class="selector-container">
+					<span>学院</span>
+					<select class="value-selector" @change="instsChanged" v-model="iid">
+						<option v-for="inst in insts" :value="inst.iid">{{inst.name}}</option>
+					</select>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="selector-container">
+					<span>教师</span>
+					<select class="value-selector teacher-selector" @change="teachersChanged">
+						<option value="-1"></option>
+						<option v-for="(teacher,i) in teachers" :value="i">{{teacher.name}}</option>
+					</select>
+				</div>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="selector-container">
+					<span v-if="teacher.name!=null">当前教师:【{{teacher.name}}】</span>
+					<span v-if="teacher.name==null">请选择教师</span>
+				</div>
+				<div class="control-container selector-container">
+					<div class="control-button clear-button" @click="clear">重置排课表</div>
+					<div class="control-button commit-button" @click="save">保存排课</div>
+				</div>
+			</div>
+			<table class="course-table course-edit-container">
+				<tr>
+					<th>星期一</th>
+					<th>星期二</th>
+					<th>星期三</th>
+					<th>星期四</th>
+					<th>星期五</th>
+					<th>星期六</th>
+					<th>星期日</th>
+				</tr>
+				<tr class="course-row">
+					<td class="course"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr><td class="tr-split" colspan="7">中午</td></tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<td class="tr-split" colspan="7">下午</td>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr class="course-row">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="edit-container edit" id="app-edit" v-if="edit">
+			<span class="title">分配课程</span>
+			<hr class="split"/>
+			<table class="insert-table">
+				<tr>
+					<td class="name">学院:</td>
+					<td class="value">
+						<select class="value-selector inst-selector" v-model="iid" @change="instChanged">
+							<option v-for="(inst,i) in insts" :value="inst.iid">{{inst.name}}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">班级:</td>
+					<td class="value">
+						<select class="value-selector clazz-selector" v-model="cid">
+							<option v-for="(clazz,i) in clazzs" :value="clazz.cid">{{clazz.grade}}级-{{clazz.name}}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">课程:</td>
+					<td class="value">
+						<select class="value-selector course-selector" @change="courseChanged">
+							<option value="-1" v-if="course.name==''"></option>
+							<option value="-1" v-if="course.name!=''">删除此配课</option>
+							<option v-for="(c,i) in courses" :value="i">{{c.name}}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">教师:</td>
+					<td class="value">
+						<span>{{course.teacher}}</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">周次:</td>
+					<td class="value">
+						<input type="text" class='input-text' v-model="course.week"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="name">节次:</td>
+					<td class="value">
+						<span>{{course.sectionDesc}}</span>
+					</td>
+				</tr>
+			</table>
+			<div class="button-list">
+				<div class="button close-button" @click="close">关闭</div>
+				<div class="button insert-button" @click="save">确定</div>
+			</div>
+		</div>
+		
+		<script src="/js/content/course.assign.js"></script>
+	</body>
+</html>

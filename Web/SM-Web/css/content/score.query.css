@@ -1,0 +1,102 @@
+.teacher-select-container{
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	min-height: 40px;
+	line-height: 40px;
+}
+.teacher-select-container .selector-container{
+	float: left;
+	margin-right: 20px;
+	color: #646464;
+}
+
+.header-button-list{
+	float: right;
+}
+.header-button-list .header-button{
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	background: #066FC5;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	float: right;
+	color: #ffffff;
+	font-size: 14px;
+	margin: 0 10px;
+}
+.score-table{
+	width: 900px;
+	margin: 0 auto;
+	border-spacing: 0;
+	display: table;
+	table-layout: fixed;
+}
+.score-table td{
+	padding: 0 10px;
+}
+
+.score-table .header{
+	background: #AAD8FF;
+	height: 35px;
+}
+.score-table .header td{
+	border-top: 1px solid #5FB1F6;
+	border-bottom: 1px solid #5FB1F6;
+	text-align: left;
+}
+.score-table .record{
+	height: 35px;
+	cursor: pointer;
+	font-size: 14px;
+	
+}
+.score-table .record:hover{
+	background: #D4ECFF;
+}
+.score-table .record td{
+	border-bottom: 1px solid #D4D4D4;
+}
+.score-table .record .score-input{
+	width: 70px;
+	height: 20px;
+}
+.score-table .operate-button{
+	padding: 0 10px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	text-align: center;
+	background: #0070CC;
+	float: left;
+	color: #ffffff;
+}
+.cue-container{
+	width: 700px;
+	margin: 20px auto;
+	color: #909090;
+	text-align: center;
+}
+.score-chart-table{
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	border-spacing: 0;
+	display: table;
+	table-layout: fixed;
+}
+.score-chart-table .name{
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+	font-weight: bold;
+	color: #717171;
+}
+.score-chart-table .value{
+	text-align: left;
+	padding-left: 10px;
+	color: #717171;
+}

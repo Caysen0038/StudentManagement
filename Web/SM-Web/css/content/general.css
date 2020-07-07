@@ -1,0 +1,101 @@
+/* 滚动条样式 */
+body::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.2);
+	
+}
+body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	border-radius: 0;
+	background: rgba(0,0,0,0.1);
+}
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.header-button-list{
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+.header-button-list li{
+	float: left;
+}
+
+.data-table .record .icon{
+	width: 25px;
+	width: 25px;
+	margin-top: 4px;
+	background: #000000;
+}
+.bottom{
+	
+}
+.table-container .page-selector{
+	float: right;
+	margin-right: 20px;
+}
+.edit-container{
+	width: 300px;
+	height: 400px;
+	margin: 20px 20px;
+	display: none;
+}
+.edit-container .edit-table{
+	table-layout: fixed;
+	width: 90%;
+}
+.edit-container .edit-table tr{
+	height: 40px;
+}
+.edit-container .edit-table .title{
+	width: 80px;
+	text-align: right;
+	padding-right: 20px;
+}
+.edit-container .edit-button-list{
+	list-style: none;
+	width: 230px;
+	margin: 20px auto;
+	padding: 0 0;
+}
+.edit-container .edit-button-list li{
+	float: left;
+	margin: 0 10px;
+}
+.edit-container .edit-button{
+	width: 90px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.edit-container .edit-save{
+	border: 1px solid #075EA4;
+	background: #0070CC;
+	cursor: pointer;
+	color: #ffffff;
+}
+.edit-container .edit-save:hover{
+	border: 1px solid #0F77CD;
+	background: #1081DD;
+}
+.edit-container .edit-close{
+	border: 1px solid #D3D3D3;
+	background: #FAFAFA;
+	cursor: pointer;
+	color: #363636;
+}
+.edit-container .edit-close:hover{
+	border-color: #0DB9C2;
+	color: #0DB9C2;
+}
+.edit-container .edit-text{
+	width: 100%;
+	height: 22px;
+}

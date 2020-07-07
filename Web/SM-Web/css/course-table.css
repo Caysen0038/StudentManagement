@@ -1,0 +1,41 @@
+.course-table{
+	margin: 0 auto;
+	border-spacing: 0;
+	table-layout: fixed;
+	display: table;
+	background: #C7F1FD;
+	border-right:1px solid #A0A0A0 ;
+	border-bottom: 1px solid #A0A0A0;
+}
+.course-table tr{
+	
+}
+.course-table tr th{
+	font-weight: bold;
+	border-left: 1px solid #A0A0A0;
+	border-top: 1px solid #A0A0A0;
+	height: 40px;
+	font-size: 14px;
+}
+.course-table tr td{
+	height:50px;
+	width: 70px;
+	border-left: 1px solid #A0A0A0;
+	border-top: 1px solid #A0A0A0;
+	cursor: pointer;
+	text-align: center;
+	padding: 5px 5px;
+	word-wrap:break-word;
+	word-break:break-all;
+	font-size: 12px;
+}
+.course-table tr td:hover{
+	
+}
+.course-table .tr-split{
+	height: 10px;
+	column-span: 7;
+}
+.course-table .course-row td:hover{
+	background: #7AC3D8;
+}

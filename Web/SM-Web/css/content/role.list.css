@@ -1,0 +1,191 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.edit-container .insert-table{
+	margin: 0 auto;
+	margin-top: 20px;
+	border-spacing: 0;
+}
+.edit-container .insert-table .name{
+	width: 200px;
+	height: 40px;
+	padding-right: 10px;
+	text-align: right;
+	color: #FFFFFF;
+}
+.edit-container .insert-table .value{
+	width: 350px;
+	text-align: left;
+	padding-left: 10px;
+
+}
+.edit-container .inst-name{
+	background: #eeeeee;
+}
+.edit-container .title{
+	color:#FFFFFF ;
+}
+.edit-container .split{
+	margin: 20px 0;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #FFFFFF;
+	
+}
+.edit-container .button-list{
+	margin: 10px auto;
+	width: 240px;
+	margin-top: 40px;
+}
+.edit-container .button{
+	width: 100px;
+	height: 30px;
+	margin: 0 5px;
+	float: left;
+	background: #0070CC;
+	cursor: pointer;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px 5px;
+}
+.edit-container .insert-button{
+	background: #6AAAF3;
+}
+.edit-container .insert-button:hover{
+	background: #5483FF;
+}
+.edit-container .close-button{
+	background: #FA3232;
+}
+.edit-container .close-button:hover{
+	background: #F77070;
+}
+.edit-container .inst{
+	color: #ffffff;
+}
+.edit-container .inst option{
+	color: #000000;
+}
+.edit-container .grade{
+	color: #ffffff;
+}
+.edit-container .grade option{
+	color: #000000;
+}
+
+.auth-container{
+	width: 250px;
+	padding: 20px 0;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.auth-container .title{
+	color:#FFFFFF ;
+	margin-left: 10px;
+}
+.auth-container .split{
+	margin: 20px 10px;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #FFFFFF;
+}
+.auth-container .auth-list{
+	list-style: none;
+	margin: 10px 20px;
+	padding: 0 0;
+	color: #ffffff;
+	height: 170px;
+	overflow: auto;
+}
+/* 滚动条样式 */
+.auth-container .auth-list::-webkit-scrollbar {/*滚动条整体样式*/
+	width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+.auth-container .auth-list::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.2);
+	
+}
+.auth-container .auth-list::-webkit-scrollbar-track {/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	border-radius: 0;
+	background: rgba(0,0,0,0.1);
+}
+.auth-container .auth-list li{
+	cursor: pointer;
+	margin: 10px 0;
+	height: 35px;
+	line-height: 35px;
+	position: relative;
+	padding-left: 5px;
+}
+.auth-container .auth-list li:hover{
+	background: #042A66;
+}
+.auth-container .auth-list li close{
+	font-size: 10px;
+	position: absolute;
+	right: 5px;
+	top: 1px;
+	padding: 0 13px;
+	border-radius: 20px;
+	background: transparent;
+}
+.auth-container .auth-list li close:hover{
+	background: #FC5E5E;
+}
+.auth-container .button-list{
+	margin: 10px auto;
+	width: 120px;
+	margin-top: 40px;
+	
+}
+.auth-container .button{
+	width: 100px;
+	height: 30px;
+	margin: 0 5px;
+	float: left;
+	background: #0070CC;
+	cursor: pointer;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px 5px;
+}
+.auth-container .insert-button{
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px 5px;
+	background: #6AAAF3;
+	margin: 10px auto;
+}
+.auth-container .insert-button:hover{
+	background: #5483FF;
+}
+.auth-container .close-button{
+	background: #FA3232;
+}
+.auth-container .close-button:hover{
+	background: #F77070;
+}
+.auth-container .auths-select{
+	color: #ffffff;
+}
+.auth-container .auths-select option{
+	color: #000000;
+}

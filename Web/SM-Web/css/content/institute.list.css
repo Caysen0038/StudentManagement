@@ -1,0 +1,59 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.edit-container .insert-table{
+	margin: 0 auto;
+	margin-top: 20px;
+	border-spacing: 0;
+}
+.edit-container .insert-table .name{
+	width: 200px;
+	height: 40px;
+	padding-right: 10px;
+	text-align: right;
+	color: #FFFFFF;
+}
+.edit-container .insert-table .value{
+	width: 350px;
+	text-align: left;
+	padding-left: 10px;
+
+}
+.edit-container .inst-name{
+	background: #eeeeee;
+}
+.edit-container .title{
+	color:#FFFFFF ;
+}
+.edit-container .split{
+	margin: 20px 0;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #FFFFFF;
+	
+}
+.edit-container .button-list{
+	margin: 10px auto;
+	width: 120px;
+}
+.edit-container .button{
+	width: 100px;
+	height: 30px;
+	margin: 0 5px;
+	float: left;
+	background: #0070CC;
+	cursor: pointer;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px 5px;
+}
+.edit-container .insert-button{
+	background: #6AAAF3;
+}
+.edit-container .insert-button:hover{
+	background: #5483FF;
+}

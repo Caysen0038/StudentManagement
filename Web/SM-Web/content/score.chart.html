@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<script src="/js/jquery.course-table.js"></script>
+		<link rel="stylesheet" href="/css/course-table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/score.chart.css" />
+		
+		<title></title>
+	</head>
+	<body>
+		<div id="app" class="edit">
+			<div class="teacher-select-container">
+				<div class="selector-container">
+					<span>学期：</span>
+					<select class="value-selector" v-model="term">
+						<option value="2020.2">2020秋季</option>
+						<option value="2020.1">2020春季</option>
+						<option value="2019.2">2019秋季</option>
+						<option value="2019.1">2019春季</option>
+						<option value="2018.2">2018秋季</option>
+						<option value="2018.1">2018春季</option>
+					</select>
+				</div>
+				<div class="selector-container">
+					<span>课程</span>
+					<select class="value-selector course-selector" v-model="coid">
+						<option v-for="course in courses" :value="course.coid">{{course.name}}</option>
+					</select>
+				</div>
+				<div class="selector-container">
+					<span>授课教师</span>
+					<select class="value-selector teacher-selector" v-model="tid">
+						<option value="">全部</option>
+						<option v-for="teacher in teachers" :value="teacher.tid">{{teacher.name}}</option>
+					</select>
+				</div>
+			</div>
+
+			
+			
+		</div>
+		<table style="width: 900px;margin: 0 auto;">
+			<tr>
+				<td>
+					<div id='pie-chart' style="width: 500px;height: 400px;margin: 0 auto;"></div>
+				</td>
+				<td>
+					<table class="score-count-table" style="display: none;">
+						<tr>
+							<td class="name">平均分</td>
+							<td id="score-avg" class="value"></td>
+						</tr>
+						<tr>
+							<td class="name">最高分</td>
+							<td id="score-max" class="value"></td>
+						</tr>
+						<tr>
+							<td class="name">最低分</td>
+							<td id="score-min" class="value"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div id='score-chart' style="width: 1000px;height: 400px;margin: 0 auto;"></div>
+		
+		<script src="/js/content/score.chart.js"></script>
+	</body>
+</html>

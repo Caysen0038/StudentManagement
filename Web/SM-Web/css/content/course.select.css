@@ -1,0 +1,78 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+.cue-container{
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	color: #606060;
+	text-align: center;
+	font-size: 16px;
+	line-height: 100px;
+}
+.header-buttons{
+	width: 900px;
+	height: 40px;
+	margin: 10px auto;
+	user-select: none;
+}
+.header-buttons .button{
+	height: 30px;
+	margin: 0 10px;
+	float: left;
+	background: #0070CC;
+	line-height: 30px;
+	padding: 0 15px;
+	color: #ffffff;
+	font-size: 12px;
+	cursor: pointer;
+}
+.course-table{
+	width: 100px;
+	margin: 0 auto;
+	display: table;
+	table-layout: fixed;
+	border-spacing: 0;
+}
+.course-table td{
+	padding: 0 10px;
+}
+.course-table .header{
+	height: 35px;
+	background: #AAD8FF;
+
+}
+.course-table .header td{
+	border-top: 1px solid #5FB1F6;
+	border-bottom: 1px solid #5FB1F6;
+	text-align: left;
+}
+.course-table .record{
+	height: 40px;
+}
+.course-table .record td{
+	border-bottom: 1px solid #CDCDCD;
+	color: #787878;
+}
+.course-table  .operate-button{
+	height: 25px;
+	padding: 0 10px;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 25px;
+	background: #0070CC;
+	float: left;
+	cursor: pointer;
+	user-select: none;
+}
+.selected{
+	width: 100%;
+	margin: 20px auto;
+	margin-top: 100px;
+}
+.title{
+	width: 900px;
+	margin: 5px auto;
+	color: #6A6A6A;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/aidework.dialog.js"></script>
+		<script src="/js/aidework.core.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/course.select.css" />
+	</head>
+	<body>
+		<div id="app">
+			<div v-if="status==1">
+				<div class="header-buttons">
+					<div class="button" @click="submit">提交选课</div>
+					<div class="button" @click="reset">重置选课</div>
+				</div>
+				<div class="title">待选课程</div>
+				<table class="course-table">
+					<tr class="header">
+						<td width="80">ID</td>
+						<td width="80">课程ID</td>
+						<td width="200">课程名称</td>
+						<td width="200">教师</td>
+						<td width="250">操作</td>
+					</tr>
+					<tr class="record" v-for="(c,i) in courses">
+						<td>{{c.id}}</td>
+						<td>{{c.coid}}</td>
+						<td>{{c.name}}</td>
+						<td>{{c.tid}}</td>
+						<td><div class="operate-button" @click="select" :index="i">选择</div></td>
+					</tr>
+				</table>
+				
+				
+				<div class="selected">
+					<div class="title">已选课程</div>
+					<table class="course-table">
+						<tr class="header">
+							<td width="80">ID</td>
+							<td width="80">课程ID</td>
+							<td width="200">课程名称</td>
+							<td width="200">教师</td>
+							<td width="250">操作</td>
+						</tr>
+						<tr class="record" v-for="(c,i) in selected">
+							<td>{{c.id}}</td>
+							<td>{{c.coid}}</td>
+							<td>{{c.name}}</td>
+							<td>{{c.tid}}</td>
+							<td><div class="operate-button" @click="unselect" :index="i">退选</div></td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+			<div class="cue-container" v-if="status==0">
+				<span>暂未开放</span>
+			</div>
+			<div class="cue-container" v-if="status==2">
+				<span>非学生不可选课</span>
+			</div>
+		</div>
+		<div class="selected-panel">
+			<ul class="selected-list">
+				<li v-for="c in selected">
+					{c.coid}<span>退选</span>
+				</li>
+			</div>
+		</div>
+		
+		<script src="/js/content/course.select.js"></script>
+	</body>
+</html>

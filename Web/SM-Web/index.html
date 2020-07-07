@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>学习信息管理系统</title>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/jquery/1.4.1/jquery-cookie.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.7.0/vue-router.min.js"></script>
+		<link href="css/index.css" rel="stylesheet" />
+		<link href="css/index.top.css" rel="stylesheet" />
+		<link href="css/index.nav.css" rel="stylesheet" />
+		<link href="css/index.content.css" rel="stylesheet" />
+		<link href="css/index.bottom.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="app" class="container">
+			<div class="top-container">
+				<img src="img/logo_school.png" class="logo"/>
+				<div class="title">学生信息管理系统</div>
+				<div class="user-container">
+					<template v-if="userToken==null || user==null">
+						<div class="none-user">
+							<span class="login" @click="login">请登录</span>
+						</div>
+					</template>
+					<template v-if="userToken!=null">
+						<div class="with-user" v-if="user!=null">
+							<span class="user-role">{{user.role}}:</span>
+							<span class="username">{{user.username}}</span>
+							<span class="logout" @click="logout">注销</span>
+						</div>
+					</template>
+				</div>
+			</div>
+			<div class="nav-container">
+				<ul class="nav-list">
+					<li>
+						<div class="main-nav" menu-target="/content/home.html" @click="navClick">
+							首页
+						</div>
+					</li>
+					<li v-if="menus!=null" v-for="menu in menus">
+						<div class="main-nav" :menu-target="menu.target" @click="navClick">
+							{{menu.name}}
+						</div>
+						<div class="sub-nav" v-if="menu.sub!=null" v-for="sub in menu.sub" 
+							:menu-target="sub.target" @click="navClick">
+							{{sub.name}}
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="content-container">
+				<iframe class="content-frame" id="content-frame" src="/content/home.html"></iframe>
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>

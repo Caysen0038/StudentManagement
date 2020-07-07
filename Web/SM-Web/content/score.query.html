@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://staticcnd.baokaicong.com/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://staticcnd.baokaicong.com/js/vue/2.4.2/vue.min.js"></script>
+		<script src="/js/jquery.aidework.panel.js"></script>
+		<script src="/js/jquery.course-table.js"></script>
+		<link rel="stylesheet" href="/css/course-table.css" />
+		<link rel="stylesheet" href="/css/content/general.css" />
+		<link rel="stylesheet" href="/css/content/general.edit.css" />
+		<link rel="stylesheet" href="/css/content/score.query.css" />
+		
+		<title></title>
+	</head>
+	<body>
+		<div id="app" class="edit">
+			<div class="teacher-select-container" v-if="status>0">
+				<div class="selector-container">
+					<span>学期：</span>
+					<select class="value-selector" v-model="term" @change="termChanged">
+						<option value="2020.2">2020秋季</option>
+						<option value="2020.1">2020春季</option>
+						<option value="2019.2">2019秋季</option>
+						<option value="2019.1">2019春季</option>
+						<option value="2018.2">2018秋季</option>
+						<option value="2018.1">2018春季</option>
+					</select>
+				</div>
+			</div>
+			<table class="score-table" v-if="status>0">
+				<tr class="header">
+					<td width="50">序号</td>
+					<td width="100">学生</td>
+					<td width="130">课程</td>
+					<td width="120">班级</td>
+					<td width="120">成绩</td>
+					<td width="80">状态</td>
+					<td>操作</td>
+				</tr>
+				<tr class="record" v-for="(score,i) in scores">
+					<td>{{i+1}}</td>
+					<td>{{score.student}}</td>
+					<td>{{score.course}}</td>
+					<td>{{score.clazz}}</td>
+					<td v-if="score.status<2">
+						<input class="score-input" type="number" v-model="score.score"/>
+					</td>
+					<td v-if="score.status>=2">
+						{{score.score}}
+					</td>
+					<td>{{score.status==0?"无成绩":score.status==1?"已保存":score.status==2?"已保存":score.status==3?"申请打回":"其他"}}</td>
+					<td>
+						
+					</td>
+				</tr>
+				<tr v-if="scores.length==0">
+					<td colspan="7">无有效成绩</td>
+				</tr>
+			</table>
+			<div class="chart-container" v-if="status>0">
+				<table class="score-chart-table">
+					<tr>
+						<td class="name">平均分</td>
+						<td class="value">{{avg.score}}分</td>
+						<td class="name">最高分</td>
+						<td class="value">《{{max.course}}》<br>{{max.score}}分</td>
+						<td class="name">最低分</td>
+						<td class="value">《{{min.course}}》<br>{{min.score}}分</td>
+					</tr>
+				</table>
+			</div>
+			<div v-if="status==0" class="cue-container">
+				非学生不可查询成绩
+			</div>
+		</div>
+		
+		<script src="/js/content/score.query.js"></script>
+	</body>
+</html>

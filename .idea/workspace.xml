@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15f101ba-a993-424c-9113-42d7a9933284" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_auth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_clazz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_institute.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_log.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_menu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_property.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_role.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_role_auth.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_status.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_student.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_teacher.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyCodeConfig/sm-t_user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1fe3d4c5-68ce-4774-8256-393de4b3a03d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1fe3d4c5-68ce-4774-8256-393de4b3a03d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DB/navicat备份.nb3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DB/sm.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DB/数据库导入会出现视图不存在错误，重复导入几次即可.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/code_404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/code_500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/auth.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/clazz.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/config.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/course.assign.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/course.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/course.select.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/course.table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/course.table.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/institute.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/log.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/menu.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/role.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/score.chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/score.chart.teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/score.insert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/score.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/score.query.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/student.insert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/student.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/student.prifile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/teacher.insert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/teacher.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/teacher.prifile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/user.list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/user.password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/content/user.prifile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/course.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/aidework.table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/auth.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/clazz.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/config.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/course.assign.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/course.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/course.select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/course.table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/course.table.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/general.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/general.edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/institute.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/log.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/menu.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/role.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/score.chart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/score.insert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/score.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/score.query.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/student.insert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/student.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/student.prifile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/teacher.insert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/teacher.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/teacher.prifile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/user.list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/user.password.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/content/user.prifile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/course-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/index.bottom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/index.content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/index.nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/index.top.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/img/default_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/img/logo_school.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/aidework.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/aidework.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/auth.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/clazz.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/course.assign.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/course.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/course.select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/course.table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/course.table.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/institute.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/log.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/menu.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/role.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/score.chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/score.chart.teacher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/score.insert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/score.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/score.query.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/student.insert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/student.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/student.prifile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/teacher.insert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/teacher.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/teacher.prifile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/user.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/user.password.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/content/user.prifile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/index.content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/jquery.aidework.panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/jquery.course-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/js/vue.aidework.table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/SM-Web/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web/前端使用nginx.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/annotation/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/aspect/ControllerAuthAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/UserToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Clazz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Institute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/RoleAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/StudentCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/TeacherCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/bean/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/consts/PropertyName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/ClazzController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/InstituteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/LogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/PropertyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/StatusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/TeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/advice/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/advice/ResponseControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/interceptor/AuthInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/interceptor/UserTokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/AuthDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/ClazzDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/CourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/InstituteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/LogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/MenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/PropertyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/RoleAuthDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/ScoreDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/StatusDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/StudentCourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/TeacherCourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/TeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/AuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/ClazzProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/CourseProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/InstituteProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/LogProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/MenuProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/RoleAuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/RoleProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/ScoreProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/StudentCourseProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/StudentProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/TeacherCourseProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/TeacherProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/dao/provider/UserProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/exception/SMException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/global/GlobalContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/global/configuration/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/global/initializer/GlobalInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/ClazzService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/InstituteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/LogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/PropertyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/ScoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/StatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/TeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/ClazzServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/InstituteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/LogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/PropertyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/ScoreServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/StatusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/util/DataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/util/MessageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/baokaicong/sm/util/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MD5Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/annotation/Authority.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/aspect/ControllerAuthAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/Page$PageBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/Page.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/RequestMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/Result$ResultBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/UserToken$UserTokenBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/UserToken.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Auth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Clazz.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Course.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Institute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Log.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Property.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/RoleAuth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Score.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/StudentCourse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/TeacherCourse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/bean/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/consts/PropertyName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/AuthController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/AuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/ClazzController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/CourseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/InstituteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/LogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/MenuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/PropertyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/RoleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/ScoreController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/StatusController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/StudentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/TeacherController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/UserController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/advice/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/advice/ResponseControllerAdvice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/interceptor/AuthInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/controller/interceptor/UserTokenInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/AuthDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/ClazzDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/CourseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/InstituteDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/LogDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/MenuDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/PropertyDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/RoleAuthDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/RoleDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/ScoreDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/StatusDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/StudentCourseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/StudentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/TeacherCourseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/TeacherDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/AuthProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/AuthProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/AuthProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/ClazzProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/ClazzProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/ClazzProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/CourseProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/CourseProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/CourseProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/InstituteProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/InstituteProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/InstituteProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/LogProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/LogProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/LogProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/MenuProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/MenuProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/MenuProvider$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/MenuProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/RoleAuthProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/RoleAuthProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/RoleAuthProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/RoleProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/RoleProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/RoleProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/ScoreProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/ScoreProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/ScoreProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/StudentCourseProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/StudentCourseProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/StudentCourseProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/StudentProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/StudentProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/StudentProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/TeacherCourseProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/TeacherCourseProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/TeacherCourseProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/TeacherProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/TeacherProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/TeacherProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/UserProvider$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/UserProvider$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/dao/provider/UserProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/exception/SMException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/global/GlobalContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/global/configuration/BeanConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/global/initializer/GlobalInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/AuthService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/ClazzService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/CourseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/InstituteService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/LogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/MenuService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/PropertyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/ScoreService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/StatusService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/StudentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/TeacherService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/AuthServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/ClazzServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/CourseServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/InstituteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/LogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/MenuServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/PropertyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/ScoreServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/StatusServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/TeacherServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/util/DataUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/util/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/util/MessageUtil$BEAHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/util/MessageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/util/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/baokaicong/sm/util/TokenUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/MD5Tester.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\Workspace\Maven\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bOFMeLujYvv7qrIGimjRyh1Ytu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.baokaicong.sm.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Java Project\SM" />
+      <recent name="D:\Workspace\Java Project\SM\Web" />
+      <recent name="D:\Workspace\Java Project\SM\DB" />
+      <recent name="D:\Workspace\Java Project\StudentManagement\src\main\java\com\baokaicong\sm\global" />
+      <recent name="D:\Workspace\Java Project\StudentManagement\src\main\java\com\baokaicong\sm\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.baokaicong.sm.dao.provider" />
+      <recent name="com.baokaicong.sm.dao" />
+      <recent name="com.baokaicong.sm.service" />
+      <recent name="com.baokaicong.sm.global.configuration" />
+      <recent name="com.baokaicong.sm.controller.interceptor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Java Project\SM\src\main\java\com\baokaicong\sm" />
+      <recent name="D:\Workspace\Java Project\StudentManagement\src\main\resources\mapper" />
+      <recent name="D:\Workspace\Java Project\StudentManagement\src\main\resources" />
+      <recent name="D:\Workspace\Java Project\StudentManagement\src\main\java\com\baokaicong\sm" />
+      <recent name="D:\Workspace\Java Project\StudentManagement\src\main\java\com\baokaicong\sm\bean" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baokaicong.sm.Application" />
+      <module name="SM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baokaicong.sm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MD5Tester" />
+      <module name="SM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.MD5Tester" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15f101ba-a993-424c-9113-42d7a9933284" name="Default Changelist" comment="" />
+      <created>1588495186656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588495186656</updated>
+      <workItem from="1589190596400" duration="452000" />
+      <workItem from="1589191086277" duration="1767000" />
+      <workItem from="1589192875173" duration="12275000" />
+      <workItem from="1589244949432" duration="34606000" />
+      <workItem from="1589355088790" duration="7423000" />
+      <workItem from="1589426373395" duration="13776000" />
+      <workItem from="1589523523224" duration="5710000" />
+      <workItem from="1589601511914" duration="2714000" />
+      <workItem from="1589700669505" duration="9160000" />
+      <workItem from="1589774596496" duration="710000" />
+      <workItem from="1589776293467" duration="1305000" />
+      <workItem from="1589807231168" duration="998000" />
+      <workItem from="1589859123762" duration="4756000" />
+      <workItem from="1589956786727" duration="4751000" />
+      <workItem from="1590046571339" duration="3001000" />
+      <workItem from="1590053574804" duration="1313000" />
+      <workItem from="1590065169447" duration="1408000" />
+      <workItem from="1590124015653" duration="4111000" />
+      <workItem from="1590139875198" duration="18000" />
+      <workItem from="1590386971982" duration="2771000" />
+      <workItem from="1590453305955" duration="3505000" />
+      <workItem from="1590462880099" duration="1742000" />
+      <workItem from="1590499605027" duration="472000" />
+      <workItem from="1590585544552" duration="2414000" />
+      <workItem from="1590648274486" duration="13642000" />
+      <workItem from="1590837447763" duration="650000" />
+      <workItem from="1591014877071" duration="840000" />
+      <workItem from="1591096459333" duration="6316000" />
+      <workItem from="1591182144131" duration="5284000" />
+      <workItem from="1591239850012" duration="15094000" />
+      <workItem from="1591354016898" duration="142000" />
+      <workItem from="1591354289852" duration="463000" />
+      <workItem from="1591354807682" duration="5654000" />
+      <workItem from="1591528324931" duration="3334000" />
+      <workItem from="1591689986351" duration="1650000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="447" y="0" key="#Auto_Import" timestamp="1589247508477">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="0" key="#Auto_Import/0.0.1366.728@0.0.1366.728" timestamp="1589247508477" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589191471106">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1589191471106" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1591529132528">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1591529132528" />
+    <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589206263702">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1589206263702" />
+    <state x="264" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592314788849">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="264" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1592314788849" />
+    <state x="457" y="230" width="454" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590660986920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="457" y="230" width="454" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1590660986920" />
+    <state x="462" y="243" width="483" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1589258547988">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="243" width="483" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1589258547988" />
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589206348951">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1589206348951" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589252040558">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589252040558" />
+    <state x="119" y="88" width="1127" height="597" key="#xdebugger.evaluate" timestamp="1592231333603">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="119" y="88" width="1127" height="597" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1592231333603" />
+    <state x="213" y="19" key="DBNavigator.ProjectSettingsDialog" timestamp="1588496589661">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="DBNavigator.ProjectSettingsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588496589661" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1592988208011">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592988208011" />
+    <state width="1323" height="151" key="GridCell.Tab.0.bottom" timestamp="1594094122554">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594094122554" />
+    <state width="1323" height="151" key="GridCell.Tab.0.center" timestamp="1594094122554">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594094122554" />
+    <state width="1323" height="151" key="GridCell.Tab.0.left" timestamp="1594094122554">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594094122554" />
+    <state width="1323" height="151" key="GridCell.Tab.0.right" timestamp="1594094122554">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594094122554" />
+    <state width="1323" height="151" key="GridCell.Tab.1.bottom" timestamp="1594094122355">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594094122355" />
+    <state width="1323" height="151" key="GridCell.Tab.1.center" timestamp="1594094122354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594094122354" />
+    <state width="1323" height="151" key="GridCell.Tab.1.left" timestamp="1594094122354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594094122354" />
+    <state width="1323" height="151" key="GridCell.Tab.1.right" timestamp="1594094122355">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="151" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594094122355" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1589191304157">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1589191304157" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1589463469989">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589463469989" />
+    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1591531925755">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1591531925755" />
+    <state x="413" y="168" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1589203347948">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="168" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1366.728@0.0.1366.728" timestamp="1589203347948" />
+    <state x="57" y="59" key="new project wizard" timestamp="1592788582361">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="57" y="59" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1592788582361" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1591705950220">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1591705950220" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1591529280290">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591529280290" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/baokaicong/sm/controller/interceptor/AuthInterceptor.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="score" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

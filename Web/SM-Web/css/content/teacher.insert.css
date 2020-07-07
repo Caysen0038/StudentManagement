@@ -1,0 +1,55 @@
+body{
+	margin: 0 0;
+	padding: 0 0;
+}
+.insert-table{
+	margin: 0 auto;
+	margin-top: 20px;
+	border-spacing: 0;
+}
+.insert-table .name{
+	width: 100px;
+	height: 40px;
+	padding-right: 10px;
+	text-align: right;
+
+}
+.insert-table .value{
+	width: 250px;
+	text-align: left;
+	padding-left: 10px;
+
+}
+.insert-table .sex{
+	margin-top: -4px;
+	width: 50px;
+}
+.insert-table .clazz{
+	width: 120px;
+}
+.insert-table .inst{
+	width: 150px;
+}
+.button-list{
+	margin: 10px auto;
+	width: 120px;
+}
+.button{
+	width: 100px;
+	height: 30px;
+	margin: 0 5px;
+	float: left;
+	background: #0070CC;
+	cursor: pointer;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px 5px;
+}
+.insert-button{
+	background: #0070CC;
+}
+.insert-button:hover{
+	background: #5483FF;
+}
